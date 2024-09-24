@@ -378,6 +378,7 @@ a {
 /* ******************** *************************************************************************/
 
 .farm {
+  margin-top: 4rem;
   background-image: url(/src/farm.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -410,7 +411,7 @@ a {
 .farm h4 {
   position: absolute;
   z-index: 111;
-  font-size:19px;
+  font-size:22px;
   padding: 0 2rem;
   text-align: center;
 }
