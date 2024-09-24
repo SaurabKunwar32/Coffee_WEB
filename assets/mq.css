@@ -1,0 +1,335 @@
+@media (max-width: 1125px) {
+  .conH {
+    margin: 0 8rem;
+  }
+
+  .content-home {
+    top: 5rem;
+    margin: 0;
+  }
+
+  .menu_items {
+    padding: 2rem;
+  }
+
+  .box {
+    padding: 1rem 0;
+  }
+
+  .about_contents {
+    padding: 0 2rem;
+  }
+
+  .swiper {
+    width: 90%;
+  }
+  
+
+  .swiper-slide{
+    max-width:450px;
+  }
+
+  .swiperClinent_MSG p{
+    padding: 0.5rem;
+  }
+
+  .swiper-wrapper {
+    gap: 2rem;
+    grid-template-columns: 1fr  ;
+  }
+
+}
+
+@media (max-width: 990px) {
+  .Home::after {
+    height: 10rem;
+  }
+
+  header {
+    height: 60px;
+    position: fixed;
+    width: 100%;
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+
+  nav {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 140px;
+    backdrop-filter: blur(20rem);
+    transform: translateX(100%);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s linear;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+  }
+
+  .item li {
+    line-height: 4.5rem;
+    font-size: 1.5rem;
+  }
+  .item a:hover::before {
+    width: 0;
+  }
+
+  .activeNav nav {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+    z-index: -1;
+  }
+
+  .activeNav #cross {
+    visibility: visible;
+    opacity: 1;
+    display: inline-block;
+  }
+
+  .activeNav .carts #menu {
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+  }
+
+  .carts #c1,
+  #c2 {
+    display: none;
+  }
+
+  header {
+    padding: 3rem;
+  }
+
+  .conH {
+    margin: 0 2rem;
+  }
+
+  .carts #menu {
+    visibility: visible;
+    opacity: 1;
+    display: inline-block;
+    z-index: 1;
+  }
+
+  .Home {
+    padding-top: 8rem;
+  }
+
+  .content-home {
+    top: 10rem;
+  }
+
+  .foot-items {
+    width: 90%;
+  }
+
+  .reachus i:hover {
+    transform: translateY(0);
+    color: var(--color);
+  }
+  .farm{
+  display: none;
+  }
+}
+
+@media (max-width: 930px) {
+  .menu_items {
+    padding: 0 3rem;
+  }
+
+  .box {
+    padding: 1rem 0;
+  }
+
+  .grid3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid2 {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+
+ 
+}
+
+@media (max-width: 850px) {
+  .content-home {
+    max-width: 30rem;
+    height: 100vh;
+  }
+
+  .content-home h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+  form {
+    width: 75%;
+  }
+}
+
+@media (max-width: 720px) {
+  .Home::after {
+    height: 7rem;
+  }
+
+  .content-home {
+    top: 10rem;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 1rem;
+  }
+
+  .content-home {
+    max-width: 25rem;
+    height: 100%;
+    top: 8rem;
+  }
+
+  .content-home h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .content-home p {
+    margin: 0.5rem;
+  }
+
+  .content-home .btn {
+    margin: 0.8rem;
+  }
+
+  .grid3 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .box {
+    padding: 2rem 0;
+  }
+
+  .formBox {
+    padding: 0;
+  }
+  form {
+    width: 80%;
+    padding: 1.5rem;
+  }
+
+  .foot-items {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .reachus {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .Home::after {
+    height: 4rem;
+  }
+
+  .Home {
+    padding-top: 8.5rem;
+  }
+
+  .content-home {
+    top: 6rem;
+    left: 1rem;
+    max-width: 18rem;
+    padding: 0;
+  }
+
+  .content-home h1 {
+    font-size: 2rem;
+  }
+
+  .content-home p {
+    line-height: 1.5rem;
+  }
+
+  .Menu h2 {
+    margin-bottom: 1rem;
+  }
+  .menu_items {
+    padding: 2rem;
+  }
+  .box {
+    padding: 1rem;
+  }
+
+  .box p {
+    margin: 0;
+  }
+
+  .Menu {
+    padding: 0;
+  }
+
+  .commonT {
+    font-size: 2.5rem;
+  }
+  form {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .commonT {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 398px) {
+  .content-home {
+    top: 6rem;
+  }
+
+  .Home {
+    padding-top: 12rem;
+  }
+
+  form {
+    width: 95%;
+  }
+
+  footer {
+    height: 250px;
+  }
+}
+
+@media (max-width: 321px) {
+  .content-home {
+    top: 5.5rem;
+    width: 15rem;
+  }
+
+  .content-home h1 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  .content-home p {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+
+  .Home {
+    padding-top: 8rem;
+  }
+}

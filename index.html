@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffe WEB</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/mq.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:300,regular,500,600,700,800,900,"
+      rel="stylesheet"
+    />
+    <!-- *********************************for google fonts************************************* -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- ******************************font awsome********************************************* -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- ###############################header start######################################### -->
+    <header>
+      <div class="logo"><a href="/">LOGO</a></div>
+      <nav>
+        <ul class="item">
+          <li><a href="#">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Menu">Menu</a></li>
+          <li><a href="#Special"> Special</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
+      <div class="carts">
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass" id="c1"></i>
+          <div class="searBox">
+            <div class="sbox">
+              <input
+                type="text"
+                id="searchItem"
+                placeholder="Enter the name of item.."
+              />
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+        </div>
+        <i class="fa-solid fa-cart-shopping ico" id="c2"></i>
+        <i class="fa-solid fa-bars ico" id="menu"></i>
+        <i class="fa-solid fa-x" id="cross"></i>
+      </div>
+    </header>
+
+    <!-- ###############################header end######################################### -->
+
+    <!-- #########################################Home Section start################################# -->
+    <section id="Home" class="Home">
+      <img src="./src/main.jpg" alt="hell" class="BAcki" />
+      <div class="conH">
+        <div class="content-home">
+          <h1>fresh coffe in the morning</h1>
+          <p>
+            For a coffee lover, each cup is a warm embrace, rich with flavor and
+            comfort. Every sip invites connection, turning moments into
+            cherished memories.
+          </p>
+          <button class="btn Get"><a href="#Menu">Get now</a></button>
+        </div>
+      </div>
+    </section>
+    <!-- #########################################Home Section end################################# -->
+
+    <!-- #########################################About Section start################################# -->
+    <section id="About" class="About grid container">
+      <h2 class="commonT">About <span>us</span></h2>
+
+      <div class="about_contents grid2">
+        <div class="abimg">
+          <img src="./src/abt.jpeg" alt="" />
+        </div>
+
+        <div class="abtxt">
+          <h3>What makes our coffe special?</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+            voluptatibus consequuntur nemo iusto porro excepturi ipsa
+            praesentium, recusandae, consequatur voluptates voluptas. Sed, ad
+            dicta sequi illum fugiat vitae. Quasi, blanditiis.
+          </p>
+
+          <button class="btn">Learn More</button>
+        </div>
+      </div>
+    </section>
+    <!-- ######################################### About Section end################################# -->
+
+    <!-- ######################################### Menu Section end################################# -->
+    <section id="Menu" class="Menu container grid">
+      <h2 class="commonT">Our <span>menu</span></h2>
+      <div class="menu_items grid3" id="menu_items"></div>
+    </section>
+
+    <!-- ######################################### Menu Section end################################# -->
+
+    <!-- ######################################### Special Section start################################# -->
+
+    <section id="Special" class="Special container grid">
+      <h2 class="commonT">Daily <span>Special</span></h2>
+      <div class="menu_items grid3 speciAl" id="special_items"></div>
+    </section>
+
+    <!-- ######################################### Special Section end################################# -->
+
+    <!-- ######################################### Review Section start ################################# -->
+
+    <section class="slider_container container">
+      <h2 class="commonT"><span>Our</span> reviews</h2>
+      <div class="containers">
+        <div class="swiper sipe_Cont">
+          <div class="swiper-wrapper">
+
+            <!-- <div class="swiper-slide sbox">
+              <div class="review">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum
+                  minus dolorem, modi nostrum necessitatibus erro Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Totam, veritatis
+                  velitt?
+                </p>
+              </div>
+              <div class="customer-data">
+                <figure>
+                  <img src="./customers/2.jpg" alt="reviewa" />
+                </figure>
+                <div class="cname">
+                  <p>Henry hancy</p>
+                  <p>regular</p>
+                </div>
+              </div>
+            </div> -->
+
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section>
+
+<!-- ######################################### Review Section end ################################# -->
+
+
+<!-- ######################################### FARM Section start ################################# -->
+<section class="farm">
+  <div class="overlay"></div>
+<h4>Smooth and aromatic, this coffee delivers a comforting warmth. It’s the perfect companion for any moment</h4>
+</section>
+
+<!-- ######################################### FARM Section end ################################# -->
+
+
+
+
+<!-- ######################################### Contact Section start ################################# -->
+
+    <section id="contact" class="contact grid container">
+      <h2 class="commonT">Contact <span>us</span></h2>
+
+      <div class="FORMOUT">
+        <div class="formBox">
+          <form>
+            <div class="userName">
+              <label for="username"> </label>
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+
+            <div class="subjEct">
+              <label for="subject"></label>
+              <input
+                type="text"
+                name="subject"
+                id="subject"
+                placeholder="Enter your subject"
+                required
+              />
+            </div>
+            <div class="txtArea">
+              <label for="textarea"></label>
+              <textarea
+                name="textarea"
+                id="textarea"
+                placeholder="TextArea"
+              ></textarea>
+            </div>
+            <button class="btn submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ######################################### Contact Section end ################################# -->
+
+    <a href="#" class="to-top"><i class="fa-solid fa-chevron-up"></i></a>
+
+    <!-- ######################################### Footer Section start ################################# -->
+
+    <footer>
+      <div class="foot-items">
+        <div class="location">
+          <span> © Newa Coffe , Kathmandu</span>
+          <br />
+          <span>Life's too short for bad coffee.</span>
+        </div>
+        <div class="reachus">
+          <p>Connect with us:</p>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ######################################### footer Section start ################################# -->
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/app.js"></script>
+  </body>
+</html>
