@@ -42,6 +42,11 @@ header {
   z-index: 1111;
 }
 
+.headwidth{
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
 .logo {
   font-size: 3rem;
 }
@@ -247,7 +252,7 @@ a {
 }
 
 .conH {
-  margin: 0 10rem;
+  margin: 0 2rem;
 }
 
 .content-home {
@@ -270,9 +275,7 @@ a {
 
 /* ******************** *************************************************************************/
 
-.abimg {
-  background-color: red;
-}
+
 
 .abimg img {
   width: 100%;

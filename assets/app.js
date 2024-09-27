@@ -192,7 +192,7 @@ const initializeSwiper = () => {
     spaceBetween: 80,
     loop: true,
     autoplay: {
-      delay: 2000,
+      delay: 3000,
       disableOnInteraction: false,
     },
     pagination: {
@@ -206,11 +206,11 @@ const initializeSwiper = () => {
       },
       400: {
         slidesPerView: 1,
-        spaceBetween: 20,
+        spaceBetween: 5,
       },
       580: {
         slidesPerView: 1,
-        spaceBetween: 50,
+        spaceBetween: 5,
       },
       670: {
         slidesPerView: 1,
