@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Cold Brew",
+    "price": "$24.99",
+    "imgSrc": "./src/coldBrew.jpg",
+    "alt": "menus"
+  },
+  {
+    "name": "Red Eye",
+    "price": "$18.99",
+    "imgSrc": "./src/redEye.jpg",
+    "alt": "menus"
+  },
+  {
+    "name": "Macchiato",
+    "price": "$28",
+    "imgSrc": "./src/macchiato.jpg",
+    "alt": "menus"
+  }
+]

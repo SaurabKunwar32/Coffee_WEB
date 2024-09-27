@@ -1,4 +1,4 @@
-@media (max-width: 1125px) {
+@media (max-width: 1175px) {
   .conH {
     margin: 0 8rem;
   }
@@ -141,6 +141,11 @@
   .farm{
   display: none;
   }
+
+  .slider_container .containers {
+    margin-inline: none;
+  }
+  
 }
 
 @media (max-width: 930px) {

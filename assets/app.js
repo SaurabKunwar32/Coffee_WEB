@@ -27,6 +27,8 @@ window.addEventListener("scroll", () => {
   }
 });
 
+
+
 //============================= for search box ============================================
 
 let sicon = document.getElementById("c1");
@@ -43,210 +45,195 @@ document.addEventListener("click", () => {
   }
 });
 
+
+
+
 // =====================================For the menu items===========================================
-const menuItems = [
-  {
-    name: "Frappe",
-    price: "$14.99",
-    imgSrc: "./src/m6.jpg",
-  },
-  {
-    name: "Expresso",
-    price: "$18",
-    imgSrc: "./src/m1.jpg",
-  },
-  {
-    name: "Americano",
-    price: "$8",
-    imgSrc: "./src/m2.jpg",
-  },
-  {
-    name: "Mocha",
-    price: "$11",
-    imgSrc: "./src/m3.jpg",
-  },
-  {
-    name: "Milk Coffee",
-    price: "$5",
-    imgSrc: "./src/m4.jpg",
-  },
-  {
-    name: "Red Coffee",
-    price: "$7",
-    imgSrc: "./src/m5.jpg",
-  },
-];
+let menuItems = [];
 
-const menuContainer = document.getElementById("menu_items");
+const showMenu = () => {
+  fetch("/assets/menuItems.json")
+    .then((response) => response.json())
+    .then((data) => {
+      menuItems = data;
+      menuAddtoHTML();
+    });
+};
 
-menuItems.forEach((item) => {
-  const boxes = document.createElement("div");
+showMenu();
 
-  boxes.className = "box";
+const menuAddtoHTML = () => {
+  if (menuItems.length > 0) {
+    const menuContainer = document.getElementById("menu_items");
 
-  boxes.innerHTML = `
-   <img src="${item.imgSrc}" />
+    if (menuContainer) {
+      menuContainer.innerHTML = "";
+
+      menuItems.forEach((item) => {
+        const boxes = document.createElement("div");
+
+        boxes.className = "box";
+
+        boxes.innerHTML = `
+   <img src="${item.imgSrc}" alt="${item.alt}" />
           <p>${item.name}</p>
           <p>${item.price}</p>
           <button class="btn">Add to cart</button>
   `;
-  menuContainer.appendChild(boxes);
-});
+        menuContainer.appendChild(boxes);
+      });
+      ScrollReveal().reveal(".menu_items .box", {
+        origin: "top",
+        // delay: 200,
+        interval: 100,
+      });
+    }
+  }
+};
+
+
+
 
 //============================================ for special items ===================================
-const specialItems = [
-  {
-    name: "Cold Brew",
-    price: "$24.99",
-    imgSrc: "./src/coldBrew.jpg",
-  },
-  {
-    name: "Red Eye",
-    price: "$18.99",
-    imgSrc: "./src/redEye.jpg",
-  },
-  {
-    name: "Macchiato",
-    price: "$28",
-    imgSrc: "./src/macchiato.jpg",
-  },
-];
+let specialItems = [];
 
-const container = document.getElementById("special_items");
+const showSpecial = () => {
+  fetch("/assets/specialItem.json")
+    .then((response) => response.json())
+    .then((data) => {
+      specialItems = data;
+      specialAddtoHTML();
+    });
+};
 
-specialItems.forEach((item) => {
-  const box = document.createElement("div");
+showSpecial();
 
-  box.className = "box";
+const specialAddtoHTML = () => {
+  if (specialItems.length > 0) {
+    const container = document.getElementById("special_items");
 
-  box.innerHTML = `
-   <img src="${item.imgSrc}" />
-          <p>${item.name}</p>
-          <p>${item.price}</p>
-          <button class="btn">Add to cart</button>
-          `;
+    if (container) {
+      specialItems.forEach((item) => {
+        const box = document.createElement("div");
 
-  container.appendChild(box);
-});
+        box.className = "box";
 
+        box.innerHTML = `
+     <img src="${item.imgSrc}" alt="${item.alt}" />
+            <p>${item.name}</p>
+            <p>${item.price}</p>
+            <button class="btn">Add to cart</button>
+            `;
 
-
-// =============================== Data for reviews =======================================
-const reviewsData = [
-  {
-    text: "This coffee is like a warm hug in a cup. The rich aroma fills the room, and every sip feels like a small escape. It's the perfect start to my day.",
-    imgSrc: "./customers/5.jpg",
-    name: "Sarah J.",
-    status: "Coffee Enthusiast"
-  },
-  {
-    text: "I never knew coffee could be so comforting until now. It's not just about the caffeine; the balanced flavors keep me coming back for more.",
-    imgSrc: "./customers/2.jpg",
-    name: "Mark R.",
-    status: "Regular Customer"
-  },
-  {
-    text: "Each cup is brewed to perfection. With hints of caramel, this coffee hits all the right notes, making it my go-to for mornings and afternoons.",
-    imgSrc: "./customers/3.jpg", 
-    name: "Emily K.",
-    status: "Daily Drinker"
-  },
-  {
-    text: "This coffee is my daily ritual. It's smooth and flavorful without being too strong. It's perfect for starting my day and enjoying during breaks.",
-    imgSrc: "./customers/4.jpg", 
-    name: "Nancy L.",
-    status: "Loyal Fan"
-  },
-  {
-    text: "I'm in love with the deep, bold flavor of this coffee. It's the perfect pick-me-up, whether I’m starting the morning or pushing through an afternoon slump.",
-    imgSrc: "./customers/5.jpg", 
-    name: "Anna S.",
-    status: "Coffee Lover"
-  },
-  {
-    text: "This coffee is perfection in a cup. Its rich, velvety texture and comforting aroma make it more than just a drink—it's an experience I crave daily.",
-    imgSrc: "./customers/6.jpg", 
-    name: "Jake P.",
-    status: "Frequent Customer"
+        container.appendChild(box);
+      });
+      ScrollReveal().reveal(".menu_items .box", {
+        origin: "top",
+        distance: "160px",
+        interval: 100,
+      });
+    }
   }
-];
+};
 
-
-// ============== Function to generate reviews dynamically
-function loadReviews() {
-  const swiperContainer = document.querySelector(".swiper-wrapper");
-
-  reviewsData.forEach((review) => {
-    const slide = document.createElement("div");
-    slide.classList.add("swiper-slide", "sbox");
-
-    slide.innerHTML = `
-        <div class="review">
-          <p>${review.text}</p>
-        </div>
-        <div class="customer-data">
-          <figure>
-            <img src="${review.imgSrc}" alt="review image">
-          </figure>
-          <div class="cname">
-            <p>${review.name}</p>
-            <p>${review.status}</p>
-          </div>
-        </div>
-      `;
-
-    swiperContainer.appendChild(slide);
-  });
-}
-
-// Call the function to load reviews when the page loads
-window.onload = loadReviews;
 
 
 // ================================ For the reviews======================================
-var swiper = new Swiper(".sipe_Cont", {
-  spaceBetween: 80,
-  loop: true,
-  autoplay: {
-    delay: 2000,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-      spaceBetween: 50,
-    },
-    400: {
-      slidesPerView: 1,
-      spaceBetween: 20,
-    },
-    520: {
-      slidesPerView: 2,
-      spaceBetween: 10,
-    },
-    670: {
-      slidesPerView: 2,
-    },
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 40,
-    },
-    1150: {
-      slidesPerView: 3,
-      spaceBetween: 30,
-    },
-    1524: {
-      slidesPerView: 4,
-      spaceBetween: 10,
-    },
-  },
-});
 
-// // ***************************animations*******************************************
+let reviewsData = [];
+
+const showReviews = () => {
+  fetch("/assets/reviews.json")
+    .then((response) => response.json())
+    .then((data) => {
+      reviewsData = data;
+      reviewsAddtoHTML();
+    })
+};
+
+showReviews();
+
+const reviewsAddtoHTML = () => {
+  if (reviewsData.length > 0) {
+    const swiperContainer = document.querySelector(".swiper-wrapper");
+
+    if (swiperContainer) {
+      reviewsData.forEach((review) => {
+        const slide = document.createElement("div");
+        slide.classList.add("swiper-slide", "sbox");
+
+        slide.innerHTML = `
+          <div class="review">
+            <p>${review.text}</p>
+          </div>
+          <div class="customer-data">
+            <figure>
+              <img src="${review.imgSrc}" alt="review image">
+            </figure>
+            <div class="cname">
+              <p>${review.name}</p>
+              <p>${review.status}</p>
+            </div>
+          </div>
+        `;
+
+        swiperContainer.appendChild(slide);
+      });
+
+      // After adding reviews, initialize or update the Swiper instance
+      initializeSwiper();
+    }
+  }
+};
+
+
+const initializeSwiper = () => {
+  var swiper = new Swiper(".sipe_Cont", {
+    spaceBetween: 80,
+    loop: true,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 50,
+      },
+      400: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      580: {
+        slidesPerView: 1,
+        spaceBetween: 50,
+      },
+      670: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 1,
+        spaceBetween: 40,
+      },
+      1150: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      1524: {
+        slidesPerView: 4,
+        spaceBetween: 10,
+      },
+    },
+  });
+};
+
+
+
+// // *************************** animations *******************************************
 ScrollReveal({
   distance: "160px",
   duration: 2000,
@@ -259,15 +246,12 @@ ScrollReveal().reveal(".content-home", {
   delay: 200,
   interval: 200,
 });
+
 ScrollReveal().reveal(".commonT", { origin: "bottom", delay: 200 });
+
 ScrollReveal().reveal(".About", {
   origin: "top",
   delay: 200,
   distance: "200px",
-});
-ScrollReveal().reveal(".menu_items .box", {
-  origin: "top",
-  // delay: 200,
-  interval: 100,
 });
 

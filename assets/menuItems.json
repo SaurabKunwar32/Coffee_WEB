@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Frappe",
+    "price": "$14.99",
+    "imgSrc": "./src/m6.jpg",
+    "alt": "menus"
+  },
+  {
+    "name": "Expresso",
+    "price": "$18",
+    "imgSrc": "./src/m1.jpg",
+    "alt": "menus"
+  },
+  {
+    "name": "Americano",
+    "price": "$8",
+    "imgSrc": "./src/m2.jpg",
+    "alt": "menus"
+  },
+  {
+    "name": "Mocha",
+    "price": "$11",
+    "imgSrc": "./src/m3.jpg",
+    "alt": "menus"
+  },
+  {
+    "name": "Milk Coffee",
+    "price": "$5",
+    "imgSrc": "./src/m4.jpg",
+    "alt": "menus"
+  },
+  {
+    "name": "Red Coffee",
+    "price": "$7",
+    "imgSrc": "./src/m5.jpg",
+    "alt": "menus"
+  }
+]
