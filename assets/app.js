@@ -225,7 +225,7 @@ const initializeSwiper = () => {
       },
       1524: {
         slidesPerView: 4,
-        spaceBetween: 10,
+        spaceBetween: 40,
       },
     },
   });
