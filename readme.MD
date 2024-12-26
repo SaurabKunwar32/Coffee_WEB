@@ -1,6 +1,6 @@
 # Simple Coffe WEB
 
 
-link : https://mycoffeweb.netlify.app
+link : https://simple-coffeeweb.netlify.app
 
 
