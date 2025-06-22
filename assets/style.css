@@ -354,7 +354,7 @@ a {
   margin: 0;
 }
 
-.review ::before {
+/* .review ::before {
   content: "";
   position: absolute;
   bottom: 3rem;
@@ -362,7 +362,7 @@ a {
   border: 2rem solid black;
   border-color: transparent;
   border-top-color: rgb(58, 56, 56);
-}
+} */
 
 .customer-data {
   padding-top: 1rem;

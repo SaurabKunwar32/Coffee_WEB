@@ -1,39 +1,38 @@
 [
-    {
-      "text": "This coffee is like a warm hug in a cup. The rich aroma fills the room, and every sip feels like a small escape. It's the perfect start to my day.",
-      "imgSrc": "./customers/5.jpg",
-      "name": "Sarah J.",
-      "status": "Coffee Enthusiast"
-    },
-    {
-      "text": "I never knew coffee could be so comforting until now. It's not just about the caffeine; the balanced flavors keep me coming back for more.",
-      "imgSrc": "./customers/2.jpg",
-      "name": "Mark R.",
-      "status": "Regular Customer"
-    },
-    {
-      "text": "Each cup is brewed to perfection. With hints of caramel, this coffee hits all the right notes, making it my go-to for mornings and afternoons.",
-      "imgSrc": "./customers/3.jpg",
-      "name": "Emily K.",
-      "status": "Daily Drinker"
-    },
-    {
-      "text": "This coffee is my daily ritual. It's smooth and flavorful without being too strong. It's perfect for starting my day and enjoying during breaks.",
-      "imgSrc": "./customers/4.jpg",
-      "name": "Nancy L.",
-      "status": "Loyal Fan"
-    },
-    {
-      "text": "I'm in love with the deep, bold flavor of this coffee. It's the perfect pick-me-up, whether I’m starting the morning or pushing through an afternoon slump.",
-      "imgSrc": "./customers/5.jpg",
-      "name": "Anna S.",
-      "status": "Coffee Lover"
-    },
-    {
-      "text": "This coffee is perfection in a cup. Its rich, velvety texture and comforting aroma make it more than just a drink—it's an experience I crave daily.",
-      "imgSrc": "./customers/6.jpg",
-      "name": "Jake P.",
-      "status": "Frequent Customer"
-    }
-  ]
-  
+  {
+    "text": "I never knew coffee could be so comforting until now. It's not just about the caffeine; the smooth balanced flavors keep me coming back every time.",
+    "imgSrc": "./customers/2.jpg",
+    "name": "Mark R.",
+    "status": "Regular Customer"
+  },
+  {
+    "text": "Each cup is brewed to perfection. With delicate hints of caramel, this coffee hits all the right notes, making it my favorite choice for any time of day.",
+    "imgSrc": "./customers/3.jpg",
+    "name": "Emily K.",
+    "status": "Daily Drinker"
+  },
+  {
+    "text": "This coffee is my daily ritual. It's smooth and flavorful without being too strong. It's perfect for starting my day or enjoying relaxing breaks anytime.",
+    "imgSrc": "./customers/4.jpg",
+    "name": "Nancy L.",
+    "status": "Loyal Fan"
+  },
+  {
+    "text": "Each cup is brewed to perfection. With delicate hints of caramel, this coffee hits all the right notes, making it my favorite choice for any time of day.",
+    "imgSrc": "./customers/3.jpg",
+    "name": "Emily K.",
+    "status": "Daily Drinker"
+  },
+  {
+    "text": "I'm in love with the deep, bold flavor of this coffee. It's the ideal pick-me-up, whether starting the morning or pushing through an afternoon slump.",
+    "imgSrc": "./customers/5.jpg",
+    "name": "Anna S.",
+    "status": "Coffee Lover"
+  },
+  {
+    "text": "This coffee is my daily ritual. It's smooth and flavorful without being too strong. It's perfect for starting my day or enjoying relaxing breaks anytime.",
+    "imgSrc": "./customers/4.jpg",
+    "name": "Nancy L.",
+    "status": "Loyal Fan"
+  }
+]
